@@ -1,0 +1,36 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(250, 213, 219) ;">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="products"><strong>MAISHA</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="products/add-product">Add products</a></li>
+      </ul>
+      <form class="d-flex">
+        <input (keyup)="searchData($event)" [(ngModel)]="searchTerm" name="s1" id="sid" class="form-control" type="text"
+          placeholder="search your product">
+        <button class="btn btn-outline-dark ms-2" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Header-->
+<header>
+
+  <div id="carouselExampleCaptions" class="carousel slide" style="height: 450px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.postimg.cc/Sxd4CjGZ/banner3.jpg" class="d-block w-100" style="height: 450px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="h1">Add sunshine to your <br> everyday look with our <br> bestseller handbags & totes</h1>
+          <button id="b1">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
